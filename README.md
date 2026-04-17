@@ -11,7 +11,7 @@
 Vous pouvez modifier le délai de rappel (en minutes) dans les paramètres de VS Code :
 `Focus Tchad > Delai Rappel`
 ## Installation 🛠️
-Téléchargez la dernière version `.vsix` depuis l'onglet [Releases]([lien-vers-ta-release](https://github.com/TomkerDev/focus-tchad-vscode/releases)) et installez-la dans VS Code.
+Téléchargez la dernière version `.vsix` depuis l'onglet [Releases](https://github.com/TomkerDev/focus-tchad-vscode/releases) et installez-la dans VS Code.
 
 ## Auteur
 Développé par **Tomté Hassane** - Ingénieur Logiciel & Data.
