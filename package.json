@@ -1,0 +1,56 @@
+{
+  "name": "focus-tchad-vscode",
+  "displayName": "Focus Tchad VSCode",
+  "description": "Rappel de motivation si le fichier n'est pas enregistré.",
+  "publisher": "TomteHassane",
+  "icon": "./logo.png",
+  "private": true,
+  "license": "MIT",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.116.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage",
+    "onCommand:focus-tchad-vscode.helloWorld"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+  "commands": [],
+  "configuration": {
+    "title": "Focus Tchad",
+    "properties": {
+      "focusTchad.delaiRappel": {
+        "type": "number",
+        "default": 1,
+        "description": "Délai avant le rappel de motivation (en minutes)."
+      }
+    }
+  }
+},
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.116.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.56.1",
+    "eslint": "^9.39.3",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TomkerDev/focus-tchad-vscode.git"
+}
+}
